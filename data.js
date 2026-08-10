@@ -75,7 +75,17 @@ window.QUESTION_DATA = {
       { id: "kk-67", category: "ことわざ", question: "「井の中の蛙大海を知らず」の意味は?", choices: ["狭い世界にいる者は広い世界のことを知らない", "蛙は海を渡れない", "経験がなければ何も分からない", "井戸の水は美味しい"], answer: 0, explanation: "狭い見識にとらわれ、広い世の中を知らないことのたとえ。" },
       { id: "kk-68", category: "現代文語彙", question: "「フィードバック」の意味に最も近いのは?", choices: ["結果を踏まえて行動や考えを改善すること", "新しい情報を隠すこと", "一方的に意見を伝えること", "過去を振り返らないこと"], answer: 0, explanation: "評論文などでもよく使われるカタカナ語。" },
       { id: "kk-69", category: "現代文語彙", question: "「コンセンサス」の意味は?", choices: ["複数の人の間での合意", "個人の強い意志", "反対意見", "一時的な妥協案"], answer: 0, explanation: "コンセンサス(consensus)=意見の一致、合意。" },
-      { id: "kk-70", category: "文学史", question: "『吾輩は猫である』の作者は?", choices: ["夏目漱石", "森鴎外", "芥川龍之介", "太宰治"], answer: 0, explanation: "夏目漱石のデビュー作。猫の視点から人間社会を風刺的に描いた作品。" }
+      { id: "kk-70", category: "文学史", question: "『吾輩は猫である』の作者は?", choices: ["夏目漱石", "森鴎外", "芥川龍之介", "太宰治"], answer: 0, explanation: "夏目漱石のデビュー作。猫の視点から人間社会を風刺的に描いた作品。" },
+      { id: "kk-71", category: "漢字", question: "「払拭」の読み方は?", choices: ["ふっしょく", "はらいぬぐい", "ふっしき", "ほっしょく"], answer: 0, explanation: "払拭(ふっしょく)=すっかり取り除くこと。「不安を払拭する」。" },
+      { id: "kk-72", category: "漢字", question: "「更迭」の読み方は?", choices: ["こうてつ", "こうてき", "さらてつ", "こうい"], answer: 0, explanation: "更迭(こうてつ)=ある地位や役目の人を別の人に代えること。" },
+      { id: "kk-73", category: "漢字", question: "「破綻」の読み方は?", choices: ["はたん", "はじょう", "はてい", "はたい"], answer: 0, explanation: "破綻(はたん)=物事がうまくいかなくなり、修復できなくなること。" },
+      { id: "kk-74", category: "四字熟語", question: "「本末転倒」の意味は?", choices: ["物事の重要な部分とそうでない部分を取り違えること", "最初から最後まで一貫していること", "元の状態に戻ること", "本と末端が入れ替わる現象"], answer: 0, explanation: "根本的なことと些細なことの扱いを逆にしてしまうこと。" },
+      { id: "kk-75", category: "四字熟語", question: "「切磋琢磨」の意味は?", choices: ["仲間同士互いに励まし合い競い合って向上すること", "一人で黙々と努力すること", "石を磨いて宝石を作る技術", "厳しく叱ること"], answer: 0, explanation: "玉や石を切り磨くように、学問や人格を磨き合うこと。" },
+      { id: "kk-76", category: "ことわざ", question: "「二兎を追う者は一兎をも得ず」の意味は?", choices: ["欲張って同時に二つを狙うと結局どちらも得られないこと", "一つのことに集中すれば必ず成功すること", "ウサギ狩りの伝統的な方法", "複数の目標を持つことの大切さ"], answer: 0, explanation: "二つの兎を同時に追うと、結局どちらも捕まえられないという教え。" },
+      { id: "kk-77", category: "慣用句", question: "「頭が下がる」の意味は?", choices: ["感心して尊敬する気持ちになること", "恥ずかしく思うこと", "頭痛がすること", "謝罪すること"], answer: 0, explanation: "相手の立派な行いに深く感心し、尊敬の念を抱くこと。" },
+      { id: "kk-78", category: "慣用句", question: "「腑に落ちない」の意味は?", choices: ["納得がいかない", "気分が悪い", "お腹が空いている", "安心すること"], answer: 0, explanation: "「腑」は内臓のことで、心の底から納得できない様子を表す。" },
+      { id: "kk-79", category: "現代文語彙", question: "「ジレンマ」の意味は?", choices: ["相反する二つの事の板挟みになること", "明確な解決策があること", "強い決意", "無関心な態度"], answer: 0, explanation: "ジレンマ(dilemma)=板挟み、二者択一の苦しい状況。" },
+      { id: "kk-80", category: "文学史", question: "『羅生門』の作者は?", choices: ["芥川龍之介", "夏目漱石", "森鴎外", "川端康成"], answer: 0, explanation: "芥川龍之介の代表的な短編小説。『今昔物語集』を題材にしている。" }
     ]
   },
   suugaku: {
@@ -151,7 +161,17 @@ window.QUESTION_DATA = {
       { id: "su-67", category: "数列", question: "等比数列 3, 6, 12, 24, ... の公比は?", choices: ["2", "3", "4", "1/2"], answer: 0, explanation: "隣り合う項の比 6/3=2。" },
       { id: "su-68", category: "指数・対数", question: "log₂32 の値は?", choices: ["5", "4", "6", "32"], answer: 0, explanation: "2⁵=32なのでlog₂32=5。" },
       { id: "su-69", category: "微分", question: "f(x)=x²-4x+3 の極小値は?", choices: ["-1", "1", "3", "-4"], answer: 0, explanation: "f'(x)=2x-4=0よりx=2。f(2)=4-8+3=-1で極小値をとる。" },
-      { id: "su-70", category: "集合と論理", question: "全体集合U={1,2,3,4,5}, A={1,2,3}のとき、Aの補集合は?", choices: ["{4, 5}", "{1, 2, 3}", "{1, 2, 3, 4, 5}", "{}"], answer: 0, explanation: "補集合はUからAの要素を除いたもの。" }
+      { id: "su-70", category: "集合と論理", question: "全体集合U={1,2,3,4,5}, A={1,2,3}のとき、Aの補集合は?", choices: ["{4, 5}", "{1, 2, 3}", "{1, 2, 3, 4, 5}", "{}"], answer: 0, explanation: "補集合はUからAの要素を除いたもの。" },
+      { id: "su-71", category: "二次関数", question: "y=x²-2x-8 の頂点の座標は?", choices: ["(1, -9)", "(1, 9)", "(-1, -9)", "(2, -8)"], answer: 0, explanation: "平方完成: y=(x-1)²-9。頂点は(1, -9)。" },
+      { id: "su-72", category: "二次方程式", question: "x²+x-6=0 の解は?", choices: ["x=-3, 2", "x=3, -2", "x=-3, -2", "x=3, 2"], answer: 0, explanation: "因数分解すると (x+3)(x-2)=0。" },
+      { id: "su-73", category: "三角比", question: "tan60°の値は?", choices: ["√3", "1/√3", "1", "√3/2"], answer: 0, explanation: "tan60°=sin60°/cos60°=(√3/2)/(1/2)=√3。" },
+      { id: "su-74", category: "三角比", question: "sin120°の値は?", choices: ["√3/2", "1/2", "-√3/2", "-1/2"], answer: 0, explanation: "sin120°=sin(180°-120°)=sin60°=√3/2。" },
+      { id: "su-75", category: "確率", question: "サイコロを1回振って3以下の目が出る確率は?", choices: ["1/2", "1/3", "1/6", "2/3"], answer: 0, explanation: "1,2,3の3通り/全6通り=1/2。" },
+      { id: "su-76", category: "場合の数", question: "大中小3個のサイコロを振るときの目の出方の総数は?", choices: ["216", "18", "36", "666"], answer: 0, explanation: "6×6×6=216通り。" },
+      { id: "su-77", category: "数列", question: "1+3+5+...+19(初項1, 公差2, 項数10の等差数列)の和は?", choices: ["100", "90", "110", "55"], answer: 0, explanation: "Sn=n(a1+an)/2=10×(1+19)/2=100。連続する奇数n個の和はn²になることでも確認できる(10²=100)。" },
+      { id: "su-78", category: "指数・対数", question: "log₅125 の値は?", choices: ["3", "2", "5", "25"], answer: 0, explanation: "5³=125なのでlog₅125=3。" },
+      { id: "su-79", category: "微分", question: "f(x)=x⁴ の導関数f'(x)は?", choices: ["4x³", "x³", "4x²", "x⁴/4"], answer: 0, explanation: "べき乗の微分公式 (xⁿ)'=nx^(n-1) より 4x³。" },
+      { id: "su-80", category: "ベクトル", question: "a=(3, 4) の大きさ|a|は?", choices: ["5", "7", "25", "12"], answer: 0, explanation: "|a|=√(3²+4²)=√25=5。" }
     ]
   },
   eigo: {
@@ -227,7 +247,17 @@ window.QUESTION_DATA = {
       { id: "en-67", category: "文法", question: "不定詞: I have a lot of homework ___ tonight.", choices: ["to do", "doing", "do", "did"], answer: 0, explanation: "名詞homeworkを修飾する不定詞の形容詞的用法。" },
       { id: "en-68", category: "文法", question: "関係詞: The book ___ I read last week was interesting.", choices: ["that", "who", "whose", "where"], answer: 0, explanation: "先行詞bookは物で目的格の関係代名詞なのでthat(またはwhich。省略も可)。" },
       { id: "en-69", category: "語法(前置詞)", question: "I'm looking forward ___ seeing you soon.", choices: ["to", "for", "at", "on"], answer: 0, explanation: "look forward to ~ingのtoは前置詞なので後ろは動名詞。" },
-      { id: "en-70", category: "会話表現", question: "「Never mind.」の意味は?", choices: ["気にしないで、大丈夫です", "絶対に忘れないで", "もう一度言って", "心配しています"], answer: 0, explanation: "相手を安心させたり、話題を切り上げたりするときの表現。" }
+      { id: "en-70", category: "会話表現", question: "「Never mind.」の意味は?", choices: ["気にしないで、大丈夫です", "絶対に忘れないで", "もう一度言って", "心配しています"], answer: 0, explanation: "相手を安心させたり、話題を切り上げたりするときの表現。" },
+      { id: "en-71", category: "単語", question: "「meticulous」の意味は?", choices: ["細心の注意を払う、几帳面な", "いい加減な", "大雑把な", "気楽な"], answer: 0, explanation: "meticulous=細部にまで注意を払う様子。" },
+      { id: "en-72", category: "単語", question: "「pragmatic」の意味は?", choices: ["実用的な、現実的な", "理想主義の", "感情的な", "非効率な"], answer: 0, explanation: "pragmatic=理論より実際の結果を重視する。" },
+      { id: "en-73", category: "単語", question: "「credible」の意味は?", choices: ["信頼できる、信ぴょう性のある", "疑わしい", "独創的な", "一時的な"], answer: 0, explanation: "credible=信じるに値する、信頼できる。" },
+      { id: "en-74", category: "熟語", question: "「bring about」の意味は?", choices: ["(変化などを)引き起こす", "持ってくる", "連れて帰る", "諦める"], answer: 0, explanation: "bring about a change=変化を引き起こす。" },
+      { id: "en-75", category: "熟語", question: "「keep up with」の意味は?", choices: ["~に遅れずについていく", "~を維持する", "~を諦める", "~を追い越す"], answer: 0, explanation: "keep up with=変化や人のペースに遅れないようついていくこと。" },
+      { id: "en-76", category: "文法", question: "態: The letter ___ by my sister yesterday.", choices: ["was written", "wrote", "has written", "is writing"], answer: 0, explanation: "「手紙は姉によって書かれた」という受動態+過去。" },
+      { id: "en-77", category: "文法", question: "比較: This is ___ interesting book I have ever read.", choices: ["the most", "more", "most", "the more"], answer: 0, explanation: "the most interesting=最上級。have ever readで最上級の意味を強調。" },
+      { id: "en-78", category: "文法", question: "仮定法: If I ___ you, I would apologize.", choices: ["were", "am", "will be", "had been"], answer: 0, explanation: "現在の事実に反する仮定はif+主語+過去形。be動詞は主語に関わらずwereが基本。" },
+      { id: "en-79", category: "語法(前置詞)", question: "I am responsible ___ this project.", choices: ["for", "of", "at", "to"], answer: 0, explanation: "be responsible for ~=~に責任がある。" },
+      { id: "en-80", category: "会話表現", question: "「That makes sense.」の意味は?", choices: ["それは理にかなっている、納得できる", "それは意味不明だ", "それは残念だ", "それは危険だ"], answer: 0, explanation: "相手の説明に納得したときに使う表現。" }
     ]
   }
 };
