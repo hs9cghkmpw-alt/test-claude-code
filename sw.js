@@ -1,6 +1,8 @@
-// オフラインで動かすためのシンプルなキャッシュ戦略。
-// キャッシュの中身を更新したときはCACHE_NAMEのバージョンを上げること。
-var CACHE_NAME = "study-app-cache-v1";
+// オフラインで動かすためのキャッシュ戦略。
+// 問題データ(data.js)が頻繁に更新されるアプリなので、
+// 「まずネットワークから最新を取りに行き、オフライン時だけキャッシュを使う」方式にしている。
+// ファイル構成を変えた(ファイルを増減させた)ときはCACHE_NAMEのバージョンを上げること。
+var CACHE_NAME = "study-app-cache-v2";
 var ASSETS = [
   "./",
   "./index.html",
@@ -34,23 +36,25 @@ self.addEventListener("activate", function (event) {
   self.clients.claim();
 });
 
-// キャッシュ優先、なければネットワーク、失敗したらindex.htmlを返す(SPAのオフラインフォールバック)
+// ネットワーク優先(常に最新のdata.js/app.jsを取りに行く)、
+// オフラインなどでネットワークが使えない時だけキャッシュにフォールバックする。
+// これにより、後から問題を追加してGitHubにpushしても、
+// 電波が入る場所で開けば自動的に最新の問題が反映される。
 self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
   event.respondWith(
-    caches.match(event.request).then(function (cached) {
-      if (cached) return cached;
-      return fetch(event.request)
-        .then(function (response) {
-          var copy = response.clone();
-          caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(event.request, copy);
-          });
-          return response;
-        })
-        .catch(function () {
-          return caches.match("./index.html");
+    fetch(event.request)
+      .then(function (response) {
+        var copy = response.clone();
+        caches.open(CACHE_NAME).then(function (cache) {
+          cache.put(event.request, copy);
         });
-    })
+        return response;
+      })
+      .catch(function () {
+        return caches.match(event.request).then(function (cached) {
+          return cached || caches.match("./index.html");
+        });
+      })
   );
 });
