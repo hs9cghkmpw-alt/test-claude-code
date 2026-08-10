@@ -65,7 +65,17 @@ window.QUESTION_DATA = {
       { id: "kk-57", category: "古文単語", question: "古文の「ゆかし」の意味は?", choices: ["見たい・知りたい・心惹かれる", "気の毒だ", "恐ろしい", "つまらない"], answer: 0, explanation: "対象に強く心が惹かれ、見たい・聞きたい・知りたいと思う気持ちを表す。" },
       { id: "kk-58", category: "古文単語", question: "古文の「めでたし」の意味は?", choices: ["すばらしい、立派だ", "おめでとうという挨拶の言葉", "悲しい", "珍しい"], answer: 0, explanation: "現代語の「おめでたい」より広く、優れている・立派だという称賛の意味を持つ。" },
       { id: "kk-59", category: "古文単語", question: "古文の「うつくし」の意味は?", choices: ["かわいらしい", "美しい(現代語と全く同じ意味)", "気高い", "立派な服装をしている"], answer: 0, explanation: "古文の「うつくし」は主に小さいもの・幼いものへの愛らしさを表すことが多い。" },
-      { id: "kk-60", category: "古文単語", question: "古文の「あさまし」の意味は?", choices: ["驚きあきれる", "浅はかだ", "質素だ", "恥ずかしい"], answer: 0, explanation: "意外なことに驚き、あきれる気持ちを表す。現代語の「浅ましい」より驚きの意が強い。" }
+      { id: "kk-60", category: "古文単語", question: "古文の「あさまし」の意味は?", choices: ["驚きあきれる", "浅はかだ", "質素だ", "恥ずかしい"], answer: 0, explanation: "意外なことに驚き、あきれる気持ちを表す。現代語の「浅ましい」より驚きの意が強い。" },
+      { id: "kk-61", category: "漢字", question: "「杜撰」の読み方は?", choices: ["ずさん", "とさん", "ずせん", "とせん"], answer: 0, explanation: "杜撰(ずさん)=いい加減で不注意なこと。" },
+      { id: "kk-62", category: "漢字", question: "「相殺」の読み方は?", choices: ["そうさい", "そうさつ", "あいさつ", "そうさく"], answer: 0, explanation: "相殺(そうさい)=互いの利害や損得を差し引いて帳消しにすること。" },
+      { id: "kk-63", category: "漢字", question: "「重宝」の読み方は?", choices: ["ちょうほう", "じゅうほう", "おもたから", "かさねだから"], answer: 0, explanation: "重宝(ちょうほう)=便利で役に立つこと。" },
+      { id: "kk-64", category: "四字熟語", question: "「朝令暮改」の意味は?", choices: ["命令や方針が頻繁に変わって定まらないこと", "朝と夜で態度を変えること", "早起きの習慣", "命令に素直に従うこと"], answer: 0, explanation: "朝に出した命令を夕方には改めるという意味から。" },
+      { id: "kk-65", category: "四字熟語", question: "「四面楚歌」の意味は?", choices: ["周囲を敵に囲まれ孤立無援であること", "四方八方から褒められること", "四季の移り変わりを楽しむこと", "多くの仲間に囲まれていること"], answer: 0, explanation: "楚の項羽が四方から楚の歌を聞き、味方が寝返ったと知り絶望した故事から。" },
+      { id: "kk-66", category: "ことわざ", question: "「弘法にも筆の誤り」の意味は?", choices: ["どんな名人でも時には失敗することがある", "良い道具を使えば誰でも上手にできる", "練習すれば必ず上達する", "失敗は成功のもとである"], answer: 0, explanation: "書の名人・弘法大師でも書き損じることがあるという故事から。" },
+      { id: "kk-67", category: "ことわざ", question: "「井の中の蛙大海を知らず」の意味は?", choices: ["狭い世界にいる者は広い世界のことを知らない", "蛙は海を渡れない", "経験がなければ何も分からない", "井戸の水は美味しい"], answer: 0, explanation: "狭い見識にとらわれ、広い世の中を知らないことのたとえ。" },
+      { id: "kk-68", category: "現代文語彙", question: "「フィードバック」の意味に最も近いのは?", choices: ["結果を踏まえて行動や考えを改善すること", "新しい情報を隠すこと", "一方的に意見を伝えること", "過去を振り返らないこと"], answer: 0, explanation: "評論文などでもよく使われるカタカナ語。" },
+      { id: "kk-69", category: "現代文語彙", question: "「コンセンサス」の意味は?", choices: ["複数の人の間での合意", "個人の強い意志", "反対意見", "一時的な妥協案"], answer: 0, explanation: "コンセンサス(consensus)=意見の一致、合意。" },
+      { id: "kk-70", category: "文学史", question: "『吾輩は猫である』の作者は?", choices: ["夏目漱石", "森鴎外", "芥川龍之介", "太宰治"], answer: 0, explanation: "夏目漱石のデビュー作。猫の視点から人間社会を風刺的に描いた作品。" }
     ]
   },
   suugaku: {
@@ -131,7 +141,17 @@ window.QUESTION_DATA = {
       { id: "su-57", category: "ベクトル", question: "a=(1, 2), b=(3, 4) のとき a+b は?", choices: ["(4, 6)", "(3, 8)", "(2, 2)", "(4, 8)"], answer: 0, explanation: "成分ごとに足す: (1+3, 2+4)=(4, 6)。" },
       { id: "su-58", category: "ベクトル", question: "a=(2, 3), b=(1, -1) の内積 a・b は?", choices: ["-1", "5", "1", "-5"], answer: 0, explanation: "内積=2×1+3×(-1)=2-3=-1。" },
       { id: "su-59", category: "データの分析", question: "データ 2, 4, 6, 8, 10 の平均値は?", choices: ["6", "5", "8", "30"], answer: 0, explanation: "合計30を個数5で割ると6。" },
-      { id: "su-60", category: "データの分析", question: "分散を求める際、まず必要な計算は?", choices: ["各データと平均の差の2乗の平均", "各データの合計", "最大値と最小値の差", "中央値"], answer: 0, explanation: "分散は「偏差(データ-平均)の2乗の平均」で定義される。" }
+      { id: "su-60", category: "データの分析", question: "分散を求める際、まず必要な計算は?", choices: ["各データと平均の差の2乗の平均", "各データの合計", "最大値と最小値の差", "中央値"], answer: 0, explanation: "分散は「偏差(データ-平均)の2乗の平均」で定義される。" },
+      { id: "su-61", category: "二次関数", question: "y=x²+2x-3 のグラフがx軸と交わる点のx座標は?", choices: ["x=-3, 1", "x=3, -1", "x=-3, -1", "x=3, 1"], answer: 0, explanation: "因数分解すると (x+3)(x-1)=0。" },
+      { id: "su-62", category: "二次関数", question: "y=3x²-6x+4 の最小値は?", choices: ["1", "4", "3", "-1"], answer: 0, explanation: "平方完成: y=3(x-1)²+1。下に凸なので最小値1(x=1のとき)。" },
+      { id: "su-63", category: "三角比", question: "sin150°の値は?", choices: ["1/2", "-1/2", "√3/2", "-√3/2"], answer: 0, explanation: "sin150°=sin(180°-150°)=sin30°=1/2。" },
+      { id: "su-64", category: "三角比", question: "cos120°の値は?", choices: ["-1/2", "1/2", "-√3/2", "√3/2"], answer: 0, explanation: "cos120°=-cos60°=-1/2。" },
+      { id: "su-65", category: "確率", question: "赤玉4個、白玉2個から2個同時に取り出すとき、2個とも赤玉である確率は?", choices: ["2/5", "1/3", "4/6", "2/3"], answer: 0, explanation: "全体₆C₂=15通り、赤玉2個の選び方₄C₂=6通り。6/15=2/5。" },
+      { id: "su-66", category: "数列", question: "Σ(k=1〜20) k の値は?", choices: ["210", "190", "200", "220"], answer: 0, explanation: "Σk=n(n+1)/2=20×21/2=210。" },
+      { id: "su-67", category: "数列", question: "等比数列 3, 6, 12, 24, ... の公比は?", choices: ["2", "3", "4", "1/2"], answer: 0, explanation: "隣り合う項の比 6/3=2。" },
+      { id: "su-68", category: "指数・対数", question: "log₂32 の値は?", choices: ["5", "4", "6", "32"], answer: 0, explanation: "2⁵=32なのでlog₂32=5。" },
+      { id: "su-69", category: "微分", question: "f(x)=x²-4x+3 の極小値は?", choices: ["-1", "1", "3", "-4"], answer: 0, explanation: "f'(x)=2x-4=0よりx=2。f(2)=4-8+3=-1で極小値をとる。" },
+      { id: "su-70", category: "集合と論理", question: "全体集合U={1,2,3,4,5}, A={1,2,3}のとき、Aの補集合は?", choices: ["{4, 5}", "{1, 2, 3}", "{1, 2, 3, 4, 5}", "{}"], answer: 0, explanation: "補集合はUからAの要素を除いたもの。" }
     ]
   },
   eigo: {
@@ -197,7 +217,17 @@ window.QUESTION_DATA = {
       { id: "en-57", category: "語法(前置詞)", question: "I am interested ___ learning Japanese history.", choices: ["in", "on", "at", "for"], answer: 0, explanation: "be interested in ~ing=~することに興味がある。" },
       { id: "en-58", category: "語法(前置詞)", question: "She is good ___ playing the piano.", choices: ["at", "in", "for", "with"], answer: 0, explanation: "be good at ~ing=~するのが得意だ。" },
       { id: "en-59", category: "語法(前置詞)", question: "He arrived ___ the airport at noon.", choices: ["at", "in", "on", "to"], answer: 0, explanation: "空港のような比較的狭い地点にはatを使う(都市や国のような広い場所にはin)。" },
-      { id: "en-60", category: "語法(前置詞)", question: "They have been married ___ 10 years.", choices: ["for", "since", "during", "in"], answer: 0, explanation: "forの後には期間の長さ(ten years)、sinceの後には起点(時点)が来る。" }
+      { id: "en-60", category: "語法(前置詞)", question: "They have been married ___ 10 years.", choices: ["for", "since", "during", "in"], answer: 0, explanation: "forの後には期間の長さ(ten years)、sinceの後には起点(時点)が来る。" },
+      { id: "en-61", category: "単語", question: "「unavoidable」の意味は?", choices: ["避けられない", "避けられる", "予想外の", "一時的な"], answer: 0, explanation: "unavoidable=inevitableとほぼ同義で「避けられない」。" },
+      { id: "en-62", category: "単語", question: "「comprehensive」の意味は?", choices: ["包括的な、総合的な", "部分的な", "理解しにくい", "一時的な"], answer: 0, explanation: "comprehensive=範囲が広く、多くの要素を含む。" },
+      { id: "en-63", category: "単語", question: "「controversial」の意味は?", choices: ["議論を呼ぶ、賛否両論の", "明白な", "平凡な", "個人的な"], answer: 0, explanation: "controversial=意見が対立し論争になるような。" },
+      { id: "en-64", category: "熟語", question: "「deal with」の意味は?", choices: ["~に対処する、~を扱う", "~を無視する", "~を分配する", "~を交渉する"], answer: 0, explanation: "deal with=問題や状況にうまく対処する。" },
+      { id: "en-65", category: "熟語", question: "「turn out」の意味は?", choices: ["結局~だとわかる", "電気を消す", "生産する", "追い出す"], answer: 0, explanation: "It turned out that ~=結局~ということが判明した。" },
+      { id: "en-66", category: "文法", question: "時制: I ___ TV when the phone rang.", choices: ["was watching", "watched", "have watched", "watch"], answer: 0, explanation: "過去のある時点で進行中だった動作は過去進行形。" },
+      { id: "en-67", category: "文法", question: "不定詞: I have a lot of homework ___ tonight.", choices: ["to do", "doing", "do", "did"], answer: 0, explanation: "名詞homeworkを修飾する不定詞の形容詞的用法。" },
+      { id: "en-68", category: "文法", question: "関係詞: The book ___ I read last week was interesting.", choices: ["that", "who", "whose", "where"], answer: 0, explanation: "先行詞bookは物で目的格の関係代名詞なのでthat(またはwhich。省略も可)。" },
+      { id: "en-69", category: "語法(前置詞)", question: "I'm looking forward ___ seeing you soon.", choices: ["to", "for", "at", "on"], answer: 0, explanation: "look forward to ~ingのtoは前置詞なので後ろは動名詞。" },
+      { id: "en-70", category: "会話表現", question: "「Never mind.」の意味は?", choices: ["気にしないで、大丈夫です", "絶対に忘れないで", "もう一度言って", "心配しています"], answer: 0, explanation: "相手を安心させたり、話題を切り上げたりするときの表現。" }
     ]
   }
 };
