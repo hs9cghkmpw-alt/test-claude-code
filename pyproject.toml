@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "note-writer"
+version = "0.1.0"
+description = "Collect, distill, and write note.com articles from abstracted patterns of well-performing posts"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+note-writer = "note_writer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["note_writer*"]
