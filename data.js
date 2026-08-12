@@ -110,7 +110,22 @@ window.QUESTION_DATA = {
       { id: "kk-102", category: "古文単語", question: "古文の「さらなり」の意味は?", choices: ["言うまでもない", "とても寒い", "急なことだ", "珍しいことだ"], answer: 0, explanation: "改めて言うまでもないほど当然だ、という意味。" },
       { id: "kk-103", category: "古文単語", question: "古文の「わろし」の意味は?", choices: ["よくない、感心しない", "とても良い", "悪くはない", "珍しい"], answer: 0, explanation: "「よし」の対義語で、あまり好ましくない状態を表す(「悪し」ほど強い否定ではない)。" },
       { id: "kk-104", category: "古文単語", question: "古文の「げに」の意味は?", choices: ["本当に、なるほど", "意外にも", "決して", "かろうじて"], answer: 0, explanation: "相手の言うことに納得し、「なるほど本当に」と同意する際に使う副詞。" },
-      { id: "kk-105", category: "古文単語", question: "古文の「あな」の意味は?", choices: ["ああ、まあ(感嘆を表す)", "穴という意味の名詞のみ", "否定の意味", "疑問を表す"], answer: 0, explanation: "感動詞として使われ、「あな、めでたし(ああ、すばらしい)」のように驚きや感嘆を表す。" }
+      { id: "kk-105", category: "古文単語", question: "古文の「あな」の意味は?", choices: ["ああ、まあ(感嘆を表す)", "穴という意味の名詞のみ", "否定の意味", "疑問を表す"], answer: 0, explanation: "感動詞として使われ、「あな、めでたし(ああ、すばらしい)」のように驚きや感嘆を表す。" },
+      { id: "kk-106", category: "漢字", question: "「殊勝」の読み方は?", choices: ["しゅしょう", "ことしょう", "しゅせい", "しゅうしょう"], answer: 0, explanation: "殊勝(しゅしょう)=心がけや行動が感心であること。けなげなさま。" },
+      { id: "kk-107", category: "漢字", question: "「凋落」の読み方は?", choices: ["ちょうらく", "しゅうらく", "ちょうかい", "とうらく"], answer: 0, explanation: "凋落(ちょうらく)=草木がしぼみ落ちること。転じて勢いが衰え落ちぶれること。" },
+      { id: "kk-108", category: "漢字", question: "「猶予」の読み方は?", choices: ["ゆうよ", "ゆうし", "いよ", "ゆうたい"], answer: 0, explanation: "猶予(ゆうよ)=物事の実行を先延ばしにすること。「執行猶予」。" },
+      { id: "kk-109", category: "漢字", question: "「一縷」の読み方は?", choices: ["いちる", "いちすじ", "いちろう", "いつる"], answer: 0, explanation: "一縷(いちる)=一筋の糸のように、ごくわずかであること。「一縷の望み」。" },
+      { id: "kk-110", category: "四字熟語", question: "「花鳥風月」の意味は?", choices: ["自然の美しい景色や風流な趣", "派手な服装や振る舞い", "四季の変化に対する恐れ", "花や鳥を育てる技術"], answer: 0, explanation: "自然の美しい風物、風雅な趣を表す言葉。" },
+      { id: "kk-111", category: "四字熟語", question: "「千載一遇」の意味は?", choices: ["めったに巡り会えないほどの良い機会", "千年に一度の災害", "何度も繰り返し訪れる機会", "過去を振り返らないこと"], answer: 0, explanation: "千年に一度しか出会えないほど、めったにない好機のこと。" },
+      { id: "kk-112", category: "四字熟語", question: "「順風満帆」の意味は?", choices: ["物事が順調に進むこと", "逆風の中で努力すること", "帆船の操縦技術", "天候が不安定なこと"], answer: 0, explanation: "帆いっぱいに追い風を受けて船が進むことから、物事が順調に運ぶことを表す。" },
+      { id: "kk-113", category: "ことわざ", question: "「餅は餅屋」の意味は?", choices: ["物事にはそれぞれ専門家がおり、任せるのが一番だということ", "餅は餅屋でしか買えないという意味", "好きな食べ物は人それぞれだということ", "手作りが一番おいしいということ"], answer: 0, explanation: "餅は餅を専門に作る店が一番上手であることから、専門家に任せるべきという教え。" },
+      { id: "kk-114", category: "ことわざ", question: "「良薬は口に苦し」の意味は?", choices: ["効果のある忠告は素直に聞き入れがたいものだということ", "良い薬ほど甘く飲みやすいということ", "病気の時は苦い物を食べるべきだということ", "薬より予防が大切だということ"], answer: 0, explanation: "よく効く薬が苦いように、ためになる忠告は耳が痛いものだということ。" },
+      { id: "kk-115", category: "慣用句", question: "「舌を巻く」の意味は?", choices: ["非常に驚き感心すること", "嘘をつくこと", "言葉に詰まること", "味付けが濃いこと"], answer: 0, explanation: "相手の優れた能力などに、驚いてものが言えなくなるほど感心すること。" },
+      { id: "kk-116", category: "文法", question: "「美しい」の品詞は?", choices: ["形容詞", "形容動詞", "副詞", "連体詞"], answer: 0, explanation: "言い切りの形が「い」で終わり、物事の性質・状態を表す自立語は形容詞。" },
+      { id: "kk-117", category: "文法", question: "「本を読む」の「を」の種類は?", choices: ["格助詞", "接続助詞", "副助詞", "終助詞"], answer: 0, explanation: "体言(名詞)に付いて、他の語との関係(ここでは動作の対象)を示す助詞は格助詞。" },
+      { id: "kk-118", category: "文法", question: "「頑張ったが、失敗した」の「が」の種類は?", choices: ["接続助詞", "格助詞", "副助詞", "終助詞"], answer: 0, explanation: "文と文をつなぎ、逆接の関係を示す「が」は接続助詞。" },
+      { id: "kk-119", category: "古文単語", question: "古文の「あやし」の意味は?", choices: ["不思議だ、見慣れない", "明らかに悪い", "とても美しい", "退屈だ"], answer: 0, explanation: "現代語の「怪しい(疑わしい)」とは異なり、不思議だ・見慣れないという意味で使われることが多い。" },
+      { id: "kk-120", category: "古文単語", question: "古文の「ゆゆし」の意味は?", choices: ["程度がはなはだしい(良くも悪くも)", "全く問題ない", "少しだけ", "静かである"], answer: 0, explanation: "良い意味にも悪い意味にも、程度が甚だしいことを表す古語。" }
     ]
   },
   suugaku: {
@@ -221,7 +236,22 @@ window.QUESTION_DATA = {
       { id: "su-102", category: "微分", question: "f(x)=3x²-2x+1 上の点x=1における接線の傾きは?", choices: ["4", "2", "6", "1"], answer: 0, explanation: "f'(x)=6x-2なのでf'(1)=4。" },
       { id: "su-103", category: "積分", question: "∫(3x²-1)dx を計算すると(積分定数Cを含む)?", choices: ["x³-x+C", "3x³-x+C", "x³+C", "x³-x"], answer: 0, explanation: "項ごとに積分: ∫3x²dx=x³, ∫-1dx=-x。合わせて x³-x+C。" },
       { id: "su-104", category: "ベクトル", question: "a=(1, 0), b=(0, 1) のなす角は?", choices: ["90°", "0°", "180°", "45°"], answer: 0, explanation: "内積a・b=1×0+0×1=0となるので、2つのベクトルは直交(90°)。" },
-      { id: "su-105", category: "データの分析", question: "データ 3, 5, 5, 7, 10 の中央値(メジアン)は?", choices: ["5", "6", "7", "30"], answer: 0, explanation: "データを並べ替えたとき中央(3番目)の値が中央値。3,5,[5],7,10なので5。" }
+      { id: "su-105", category: "データの分析", question: "データ 3, 5, 5, 7, 10 の中央値(メジアン)は?", choices: ["5", "6", "7", "30"], answer: 0, explanation: "データを並べ替えたとき中央(3番目)の値が中央値。3,5,[5],7,10なので5。" },
+      { id: "su-106", category: "二次関数", question: "y=x²-8x+15 のグラフがx軸と交わる点のx座標は?", choices: ["x=3, 5", "x=-3, -5", "x=8, 15", "x=3, -5"], answer: 0, explanation: "因数分解すると (x-3)(x-5)=0。" },
+      { id: "su-107", category: "二次関数", question: "y=2x²-8x+3 の最小値は?", choices: ["-5", "3", "-8", "2"], answer: 0, explanation: "平方完成: y=2(x-2)²-5。下に凸なので最小値-5(x=2のとき)。" },
+      { id: "su-108", category: "二次方程式", question: "x²-3x-10=0 の解は?", choices: ["x=5, -2", "x=-5, 2", "x=10, -1", "x=5, 2"], answer: 0, explanation: "因数分解すると (x-5)(x+2)=0。" },
+      { id: "su-109", category: "二次方程式", question: "x²-2x-1=0 の解を解の公式で求めると?", choices: ["x=1±√2", "x=2±√2", "x=1±2√2", "x=-1±√2"], answer: 0, explanation: "解の公式より x=(2±√8)/2=(2±2√2)/2=1±√2。" },
+      { id: "su-110", category: "三角比", question: "sin0°の値は?", choices: ["0", "1", "-1", "1/2"], answer: 0, explanation: "単位円上でsin0°はy座標=0。" },
+      { id: "su-111", category: "三角比", question: "cos180°の値は?", choices: ["-1", "1", "0", "1/2"], answer: 0, explanation: "単位円上でcos180°はx座標=-1。" },
+      { id: "su-112", category: "確率", question: "硬貨を4回投げて表がちょうど2回出る確率は?", choices: ["3/8", "1/4", "1/2", "1/8"], answer: 0, explanation: "反復試行の確率: ₄C₂(1/2)²(1/2)²=6×1/16=3/8。" },
+      { id: "su-113", category: "確率", question: "1から9までの数字が1つずつ書かれたカードから1枚引くとき、偶数が出る確率は?", choices: ["4/9", "1/2", "5/9", "4/10"], answer: 0, explanation: "偶数は2,4,6,8の4枚/全9枚=4/9。" },
+      { id: "su-114", category: "場合の数", question: "異なる7人から議長1名、書記1名を選ぶ選び方は何通り?", choices: ["42", "21", "49", "14"], answer: 0, explanation: "役職の区別があるので順列。₇P₂=7×6=42。" },
+      { id: "su-115", category: "数列", question: "等差数列 100, 95, 90, ... の第10項は?", choices: ["55", "50", "60", "45"], answer: 0, explanation: "初項100、公差-5よりa₁₀=100+9×(-5)=55。" },
+      { id: "su-116", category: "数列", question: "Σ(k=1〜15) 2(定数2の15個分の和)の値は?", choices: ["30", "15", "2", "32"], answer: 0, explanation: "定数の和は「定数×項数」。2×15=30。" },
+      { id: "su-117", category: "数列", question: "初項1, 公比2の等比数列の初項から第5項までの和 Sn=a(rⁿ-1)/(r-1) は?", choices: ["31", "32", "16", "30"], answer: 0, explanation: "S=1×(2⁵-1)/(2-1)=31。" },
+      { id: "su-118", category: "指数・対数", question: "(1/2)³ の値は?", choices: ["1/8", "1/6", "3/2", "8"], answer: 0, explanation: "(1/2)³=1/2×1/2×1/2=1/8。" },
+      { id: "su-119", category: "微分", question: "f(x)=2x³-3x²+1 上の点x=0における接線の傾きは?", choices: ["0", "1", "-3", "6"], answer: 0, explanation: "f'(x)=6x²-6xなのでf'(0)=0。" },
+      { id: "su-120", category: "積分", question: "∫₁² x dx の値は?", choices: ["3/2", "1", "2", "1/2"], answer: 0, explanation: "∫x dx=x²/2なので[x²/2]₁²=2-1/2=3/2。" }
     ]
   },
   eigo: {
@@ -332,7 +362,22 @@ window.QUESTION_DATA = {
       { id: "en-102", category: "イディオム", question: "「hit the books」の意味は?", choices: ["一生懸命勉強する", "本を叩く", "図書館を訪れる", "本を出版する"], answer: 0, explanation: "アメリカ英語のくだけた表現で「猛勉強する」という意味。" },
       { id: "en-103", category: "イディオム", question: "「under the weather」の意味は?", choices: ["体調が悪い", "天気が悪い", "屋外にいる", "忙しい"], answer: 0, explanation: "「少し体調がすぐれない」という時によく使われる口語表現。" },
       { id: "en-104", category: "語法(前置詞)", question: "She apologized ___ being late.", choices: ["for", "of", "to", "at"], answer: 0, explanation: "apologize for ~=~について謝る。" },
-      { id: "en-105", category: "語法(前置詞)", question: "This medicine will help you recover ___ your illness.", choices: ["from", "of", "for", "with"], answer: 0, explanation: "recover from ~=~から回復する。" }
+      { id: "en-105", category: "語法(前置詞)", question: "This medicine will help you recover ___ your illness.", choices: ["from", "of", "for", "with"], answer: 0, explanation: "recover from ~=~から回復する。" },
+      { id: "en-106", category: "単語", question: "「altruistic」の意味は?", choices: ["利他的な、無私の", "利己的な", "攻撃的な", "孤立した"], answer: 0, explanation: "altruistic=他人の利益を優先する。" },
+      { id: "en-107", category: "単語", question: "「redundant」の意味は?", choices: ["余分な、冗長な", "不可欠な", "簡潔な", "珍しい"], answer: 0, explanation: "redundant=必要以上に多く、余分である。" },
+      { id: "en-108", category: "単語", question: "「meager」の意味は?", choices: ["乏しい、わずかな", "豊富な", "満足な", "巨大な"], answer: 0, explanation: "meager=量や質が乏しく不十分な。" },
+      { id: "en-109", category: "単語", question: "「robust」の意味は?", choices: ["頑丈な、強固な", "脆弱な", "一時的な", "単純な"], answer: 0, explanation: "robust=力強く頑丈な、しっかりした。" },
+      { id: "en-110", category: "熟語", question: "「put up with」の意味は?", choices: ["~を我慢する", "~を提案する", "~を持ち上げる", "~を修理する"], answer: 0, explanation: "put up with=toleratewと同義で「~を我慢する」。" },
+      { id: "en-111", category: "熟語", question: "「go through」の意味は?", choices: ["(困難などを)経験する、通り抜ける", "無視する", "加速する", "予約する"], answer: 0, explanation: "go through hard times=つらい時期を経験する。" },
+      { id: "en-112", category: "熟語", question: "「catch up with」の意味は?", choices: ["~に追いつく", "~を捕まえる", "~を諦める", "~を見送る"], answer: 0, explanation: "遅れていた状態から追いついて並ぶこと。" },
+      { id: "en-113", category: "文法", question: "話法: He said, 「I am tired.」を間接話法にすると?", choices: ["He said that he was tired.", "He said that I am tired.", "He said that he is tired.", "He said I am tired."], answer: 0, explanation: "間接話法では時制の一致により現在形が過去形に変わり、人称も変化する。" },
+      { id: "en-114", category: "文法", question: "付加疑問文: You like coffee, ___?", choices: ["don't you", "do you", "aren't you", "isn't it"], answer: 0, explanation: "肯定文には否定形の付加疑問がつく。likeは一般動詞なのでdon't you。" },
+      { id: "en-115", category: "文法", question: "She asked me ___ I had finished my homework.", choices: ["if", "that", "what", "which"], answer: 0, explanation: "Yes/No疑問文を間接話法にするときはif(またはwhether)を使う。" },
+      { id: "en-116", category: "文法", question: "I believe ___ he is honest.", choices: ["that", "if", "what", "which"], answer: 0, explanation: "believeの目的語として「~ということ」を表す名詞節を導くthat。" },
+      { id: "en-117", category: "文法", question: "強調構文: It was Tom ___ broke the window.", choices: ["who", "which", "whom", "whose"], answer: 0, explanation: "It is/was ~ that(who)...の強調構文。人を強調する場合はwhoも使える。" },
+      { id: "en-118", category: "文法", question: "倒置: Never ___ such a beautiful sunset.", choices: ["have I seen", "I have seen", "I saw", "did I saw"], answer: 0, explanation: "否定語Neverが文頭に出ると、主語と(助)動詞が倒置される。" },
+      { id: "en-119", category: "イディオム", question: "「a piece of cake」の意味は?", choices: ["とても簡単なこと", "一切れのケーキ(文字通りの意味のみ)", "難しい課題", "特別な機会"], answer: 0, explanation: "「朝飯前」に近い、非常に簡単なことを表すイディオム。" },
+      { id: "en-120", category: "語法(前置詞)", question: "He is famous ___ his novels.", choices: ["for", "of", "with", "to"], answer: 0, explanation: "be famous for ~=~で有名だ。" }
     ]
   }
 };
