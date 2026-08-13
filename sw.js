@@ -2,13 +2,15 @@
 // 問題データ(data.js)が頻繁に更新されるアプリなので、
 // 「まずネットワークから最新を取りに行き、オフライン時だけキャッシュを使う」方式にしている。
 // ファイル構成を変えた(ファイルを増減させた)ときはCACHE_NAMEのバージョンを上げること。
-var CACHE_NAME = "study-app-cache-v2";
+var CACHE_NAME = "study-app-cache-v3";
 var ASSETS = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
   "./data.js",
+  "./data-koumuin-math.js",
+  "./data-koumuin-lang.js",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

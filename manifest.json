@@ -1,7 +1,7 @@
 {
-  "name": "高校勉強アプリ",
-  "short_name": "高校勉強",
-  "description": "国語・数学・英語を復習できる個人用学習アプリ",
+  "name": "学習アプリ(高校+公務員初級)",
+  "short_name": "学習アプリ",
+  "description": "高校レベルと公務員初級レベルの国語・数学・英語を復習できる個人用学習アプリ",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

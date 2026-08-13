@@ -7,6 +7,7 @@
   var INTERVAL_DAYS = [0, 1, 3, 7, 14, 30]; // box 0..5 の復習間隔(日)
   var MASTERED_BOX = 4; // このboxに到達したら「習得」扱い
   var WEAK_BOX_CEILING = 3; // このbox未満かつ一度でも間違えていたら「苦手」
+  var SESSION_SIZE = 20; // 1回のクイズで出題する問題数の上限(問題バンクが大きくても1セッションは短く保つ)
 
   // ---------- 進捗データ(localStorage) ----------
   var progress = loadProgress();
@@ -146,7 +147,7 @@
       mode: "subject",
       subjectKey: key,
       title: subject.label,
-      queue: shuffle(subject.questions),
+      queue: shuffle(subject.questions).slice(0, SESSION_SIZE),
       index: 0,
       correctCount: 0
     };
@@ -161,7 +162,7 @@
       mode: "weak",
       subjectKey: null,
       title: "苦手分野の復習",
-      queue: shuffle(due).map(function (item) { return item.question; }),
+      queue: shuffle(due).slice(0, SESSION_SIZE).map(function (item) { return item.question; }),
       index: 0,
       correctCount: 0
     };
