@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>入社試験対策 学習アプリ</title>
+<meta name="theme-color" content="#1e3a8a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231e3a8a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif'%3E学%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-title">入社試験対策 学習アプリ</span>
+        <span class="brand-sub">国語・数学・英語 段階学習</span>
+      </div>
+      <nav class="topnav">
+        <button class="nav-btn" data-nav="home">ホーム</button>
+        <button class="nav-btn" data-nav="history">学習履歴</button>
+        <button class="nav-btn" data-nav="admin">問題管理</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ==================== ホーム ==================== -->
+    <section id="screen-home" class="screen">
+      <div class="page">
+        <div id="home-diagnostic-banner" class="banner hidden">
+          <div class="banner-text">
+            <strong>まずは実力診断テストを受けましょう</strong>
+            <p>国語・数学・英語、それぞれ12問(約15分)。今のレベルを分野別に診断します。</p>
+          </div>
+          <button class="btn btn-primary" data-action="start-diagnostic">診断テストを始める</button>
+        </div>
+
+        <div id="home-level-summary" class="level-summary-grid"></div>
+
+        <h2 class="section-title">学習メニュー</h2>
+        <div class="menu-grid">
+          <button class="menu-card" data-action="start-today">
+            <span class="menu-icon">📅</span>
+            <span class="menu-name">今日の学習</span>
+            <span class="menu-desc">おすすめ問題をバランスよく出題</span>
+          </button>
+          <button class="menu-card" data-action="start-weak">
+            <span class="menu-icon">🎯</span>
+            <span class="menu-name">弱点克服</span>
+            <span class="menu-desc">苦手な分野を重点的に復習</span>
+          </button>
+          <button class="menu-card" data-action="open-category-picker">
+            <span class="menu-icon">📚</span>
+            <span class="menu-name">分野別学習</span>
+            <span class="menu-desc">科目・分野・レベルを指定して学習</span>
+          </button>
+          <button class="menu-card" data-action="start-mistakes">
+            <span class="menu-icon">🔁</span>
+            <span class="menu-name">間違えた問題</span>
+            <span class="menu-desc">間違えた問題と類題を復習</span>
+          </button>
+          <button class="menu-card" data-action="open-exam-setup">
+            <span class="menu-icon">📝</span>
+            <span class="menu-name">模擬試験</span>
+            <span class="menu-desc">本番形式で総合力を確認</span>
+          </button>
+          <button class="menu-card" data-action="nav-history">
+            <span class="menu-icon">📊</span>
+            <span class="menu-name">学習履歴</span>
+            <span class="menu-desc">これまでの学習記録を確認</span>
+          </button>
+          <button class="menu-card" data-action="nav-admin">
+            <span class="menu-icon">🛠️</span>
+            <span class="menu-name">問題管理</span>
+            <span class="menu-desc">問題の追加・インポート/エクスポート</span>
+          </button>
+          <button class="menu-card" data-action="start-diagnostic">
+            <span class="menu-icon">🧭</span>
+            <span class="menu-name">実力診断テスト</span>
+            <span class="menu-desc">何度でも受け直せます</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 分野別学習: 選択画面 ==================== -->
+    <section id="screen-category-picker" class="screen hidden">
+      <div class="page page-narrow">
+        <button class="link-back" data-action="nav-home">← ホームに戻る</button>
+        <h2 class="section-title">分野別学習</h2>
+        <div id="category-picker-body"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 模擬試験: 設定画面 ==================== -->
+    <section id="screen-exam-setup" class="screen hidden">
+      <div class="page page-narrow">
+        <button class="link-back" data-action="nav-home">← ホームに戻る</button>
+        <h2 class="section-title">模擬試験</h2>
+        <div id="exam-setup-body"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 問題(クイズ)画面 ==================== -->
+    <section id="screen-quiz" class="screen hidden">
+      <div class="page page-narrow">
+        <div class="quiz-topbar">
+          <button class="link-back" id="btn-quiz-quit" data-action="quit-quiz">← 中断してホームへ</button>
+          <div id="quiz-timer" class="quiz-timer hidden"></div>
+          <span id="quiz-progress" class="progress-label">1/10</span>
+        </div>
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+
+        <div class="quiz-card">
+          <div class="quiz-meta">
+            <span id="quiz-level-badge" class="badge">LEVEL 1</span>
+            <span id="quiz-subject-badge" class="badge badge-outline">国語</span>
+            <span id="quiz-category-badge" class="badge badge-outline">漢字</span>
+          </div>
+          <div class="quiz-question" id="quiz-question">問題文</div>
+
+          <div id="quiz-choices" class="choices"></div>
+          <div id="quiz-input-area" class="input-area hidden">
+            <input type="text" id="quiz-input" class="quiz-input" autocomplete="off" placeholder="答えを入力してください">
+          </div>
+
+          <div class="quiz-explanation hidden" id="quiz-explanation">
+            <div id="quiz-result-label" class="result-label"></div>
+            <div id="quiz-steps" class="quiz-steps hidden"></div>
+            <div id="quiz-explanation-text" class="explanation-text"></div>
+          </div>
+        </div>
+
+        <div class="quiz-footer">
+          <button id="btn-submit" class="btn btn-primary">回答する</button>
+          <button id="btn-next" class="btn btn-primary hidden">次の問題へ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 結果画面(汎用) ==================== -->
+    <section id="screen-result" class="screen hidden">
+      <div class="page page-narrow">
+        <div id="result-body"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 学習履歴 ==================== -->
+    <section id="screen-history" class="screen hidden">
+      <div class="page page-narrow">
+        <h2 class="section-title">学習履歴</h2>
+        <div id="history-body"></div>
+      </div>
+    </section>
+
+    <!-- ==================== 問題管理 ==================== -->
+    <section id="screen-admin" class="screen hidden">
+      <div class="page">
+        <h2 class="section-title">問題管理</h2>
+        <div id="admin-body"></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="data-kokugo.js"></script>
+<script src="data-math.js"></script>
+<script src="data-eigo.js"></script>
+<script src="app.js"></script>
+<script src="features.js"></script>
+</body>
+</html>
